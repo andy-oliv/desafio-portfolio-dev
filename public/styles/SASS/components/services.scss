@@ -1,0 +1,41 @@
+@use "../abstract/colors.scss";
+@use "../abstract/fonts.scss";
+
+.services{
+    background-color: colors.$gray100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8em 0;
+
+    .service-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+    
+    .service{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #c0c4ce23;
+        padding: 1em;
+        border-radius: 0.5em;
+        .bx{
+            font-size: 2rem;
+        }
+        
+        .bx-desktop{
+            color: colors.$purple;
+        }
+    
+        .bxs-server{
+            color: colors.$yellow;
+        }
+    
+        .bx-infinite{
+            color: colors.$green;
+        }
+    }
+   
+}

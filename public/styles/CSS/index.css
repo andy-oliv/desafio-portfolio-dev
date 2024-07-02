@@ -1,0 +1,276 @@
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 12em;
+}
+.heroSection figure {
+  width: 6%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 4em;
+}
+.heroSection figure #profilePic {
+  border: 2px solid #E3646E;
+  border-radius: 100%;
+  padding: 0.2em;
+  height: 100%;
+  width: 100%;
+}
+.heroSection figure #code {
+  position: absolute;
+  color: #82BC4F;
+  bottom: 0em;
+  right: -0.1em;
+  width: 35%;
+}
+.heroSection #hello {
+  font-family: "Inconsolata", monospace;
+  color: #C0C4CE;
+  margin-bottom: 0.8em;
+}
+.heroSection #hello span {
+  color: #E3646E;
+}
+.heroSection #title {
+  font-family: "Asap", sans-serif;
+  color: #E2E4E9;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0.4em;
+}
+.heroSection #cta {
+  width: 40%;
+  text-align: center;
+  color: #878EA1;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 0.8rem;
+}
+.heroSection .technology-container {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 8em;
+  margin-bottom: 4em;
+}
+.heroSection .technology-container .technology {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  background-color: #292C34;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  color: #C0C4CE;
+}
+.heroSection .technology-container .technology .bx {
+  font-size: 1.5rem;
+}
+.heroSection .technology-container .technology .bxl-html5 {
+  color: #E3646E;
+}
+.heroSection .technology-container .technology .bxl-css3 {
+  color: #3996DB;
+}
+.heroSection .technology-container .technology .bxl-javascript {
+  color: #EABD5F;
+}
+.heroSection .technology-container .technology .bxl-react {
+  color: #3996DB;
+}
+.heroSection .technology-container .technology .bxl-nodejs {
+  color: #82BC4F;
+}
+.heroSection .bx-chevrons-down {
+  color: #878EA1;
+  font-size: 3rem;
+  animation: chevronAnimation 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes chevronAnimation {
+  0% {
+    transform: translateY(-0.5em);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0em);
+    opacity: 0;
+  }
+}
+.projects {
+  background-color: #16181D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 8em;
+}
+.projects .project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 0 10em;
+  gap: 1.5em;
+}
+.projects .project-container .project-wrapper {
+  background-color: #292C34;
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.7em;
+}
+.projects .project-container .project-wrapper .project {
+  width: 100%;
+}
+.projects .project-container .project-wrapper .project .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.services {
+  background-color: #0D0E11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8em 0;
+}
+.services .service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.services .service {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(192, 196, 206, 0.137254902);
+  padding: 1em;
+  border-radius: 0.5em;
+}
+.services .service .bx {
+  font-size: 2rem;
+}
+.services .service .bx-desktop {
+  color: #BB72E9;
+}
+.services .service .bxs-server {
+  color: #EABD5F;
+}
+.services .service .bx-infinite {
+  color: #82BC4F;
+}
+
+.contact {
+  padding: 10em 0 12em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.contact .contact-separator {
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact-separator #contact-name {
+  font-family: "Inconsolata", monospace;
+  color: #BB72E9;
+  margin-bottom: 0.5em;
+}
+.contact .contact-separator #contact-title {
+  font-family: "Asap", sans-serif;
+  color: #E2E4E9;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.3em;
+}
+.contact .contact-separator #contact-description {
+  font-family: "Maven Pro", sans-serif;
+  color: #C0C4CE;
+}
+.contact .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  gap: 2em;
+  background-color: #292C34;
+  padding: 1.5em;
+  border-radius: 0.5em;
+}
+.contact .contact-container .separator {
+  display: flex;
+  gap: 0.7em;
+  align-items: center;
+}
+.contact .contact-container .separator p {
+  font-size: 1.2rem;
+  font-family: "Maven Pro", sans-serif;
+}
+.contact .contact-container p {
+  color: #C0C4CE;
+}
+.contact .contact-container .bx {
+  font-size: 1.5rem;
+  color: #878EA1;
+}
+.contact .contact-container .bx-down-arrow-alt {
+  color: #3996DB;
+  transform: rotate(230deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heroSection {
+  background-image: url("../../images/Background_Intro.jpg");
+  background-size: cover;
+}
+
+.sectionName {
+  font-family: "Inconsolata", monospace;
+  color: #E3646E;
+  margin-bottom: 0.5em;
+}
+
+.sectionTitle {
+  font-family: "Asap", sans-serif;
+  color: #E2E4E9;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 3em;
+}
+
+.project-title {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: "Asap", sans-serif;
+  color: #E2E4E9;
+}
+
+.project-description {
+  font-family: "Maven Pro", sans-serif;
+  color: #C0C4CE;
+}
+
+.contact {
+  background-image: url("../../images/Background_Contacts.jpg");
+  background-size: cover;
+}
+
+/*# sourceMappingURL=index.css.map */

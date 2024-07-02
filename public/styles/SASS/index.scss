@@ -1,0 +1,48 @@
+@use "./abstract/colors.scss";
+@use "./abstract/fonts.scss";
+@use "./components/heroSection.scss";
+@use "./components/projects.scss";
+@use "./components/services.scss";
+@use "./components/contact.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroSection{
+    background-image: url("../../images/Background_Intro.jpg");
+    background-size: cover;
+}
+
+.sectionName{
+    font-family: fonts.$inconsolata;
+    color: colors.$red;
+    margin-bottom: 0.5em;
+}
+
+.sectionTitle{
+    font-family: fonts.$asap;
+    color: colors.$gray600;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    margin-bottom: 3em;
+}
+
+.project-title{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: fonts.$asap;
+    color: colors.$gray600;
+}
+
+.project-description{
+    font-family: fonts.$maven;
+    color: colors.$gray500;
+}
+
+.contact{
+    background-image: url("../../images/Background_Contacts.jpg");
+    background-size: cover;
+}
